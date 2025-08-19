@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import './App.css'
 import User from './components/User.jsx';
+import Counter from './components/Counter.jsx';
+
 
 
 function App() {
@@ -25,6 +27,7 @@ setUsers(data);
 
     <main className="app">
     <h1>My first react app</h1>
+      <Counter/>
       
     <div className="grid">{users.map(user => (
         <User key={user.id} name={user.name} mail={user.mail} image={user.image}/>
